@@ -149,7 +149,7 @@ Ansible playhooks are a completely different way to use ansible than ad-hoc task
 ```
 2. Create the same playbook in contoller VM in /etc/ansible/ directory
 
-3. Code `ansible-playbook `*playbook name.yml*
+3. Code `ansible-playbook playbook_name.yml`
 
 4. Check if playbook worked:
 ```vagrant
@@ -182,6 +182,7 @@ vagrant up
 
 
 <br>
+
 ## To Research
 
 **What is Infrastructure as Code?**
@@ -213,5 +214,3 @@ ad hoc commands - commands that act on multiple agents
 
 
 **What is the Inventory/Hosts file and what is its purpose?**
-
-
