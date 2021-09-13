@@ -87,4 +87,12 @@ ping 192.168.33.11 = *db*
 and check for responses
 
 ### **Troubleshooting**
-- yktv
+- If there are problems setting up the VMs, check the `Vagrantfile` and make sure all indentations are in the correct places
+- Make comments are all commented-out
+- Delete the running VMS and start up again
+```bash
+vagrant destroy
+rm -rf .vagrant
+vagrant up
+```
+- Go into VM `VirtualBox` and delete all running VMs
