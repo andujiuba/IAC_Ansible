@@ -73,6 +73,11 @@ end
 vagrant up
 ```
   - After, run `vagrant status` and check if all 3 VMs are running
+  ```bash
+  web                       running (virtualbox)
+db                        running (virtualbox)
+controller                running (virtualbox)
+  ```
 
 3. `vagrant ssh` into all 3 VMs and run:
 ```vagrant
@@ -160,11 +165,23 @@ ansible web -a "sudo systemctl status nginx"
 
 **Tasks:**
 
-- Create a playbook to install/configure node on te web machine
+- Create a playbook to install/configure node on the web machine
 - ceate a playbook to install/configure mongodb in the db machine
 - Get the nodeapp to work on web up with /posts
 - Configure nginx reverse proxy (port 3000)
 (could add code to reverse proxy in playbook, must install node app first)
+
+### Installing/Configuring Node.js on Web Machine
+
+
+
+### Installing/Configuring MongoDB on DB Machine
+
+
+
+### Configuring Reverse Proxy
+
+
 
 <br>
 <br>
@@ -214,3 +231,28 @@ ad hoc commands - commands that act on multiple agents
 
 
 **What is the Inventory/Hosts file and what is its purpose?**
+
+
+
+
+# Tuesday 14/9
+
+**Tasks:**
+- Launch an EC2 instance on AWS using Ansible playbook
+  - AWS keys: sre_key.pem
+  sre_key sre_key.pub
+  Ansible vault configuration
+- We need AWS account
+- IAM role with access to EC2
+
+- Create a ec2_create.yml file in ansible controller
+    
+    **IDs needed:** <br> ami ID number<br> 
+    type of instance<br> 
+    vpc ID number<br> 
+    subnet ID number<br> 
+    security group ID number<br> 
+    key name<br> 
+    public IP
+
+- Automate ssh  
