@@ -218,7 +218,10 @@ Configuration Management and Orchetration
 **What are `Ad-Hoc Commands` in Ansible?**
 ad hoc commands - commands that act on multiple agents
 
-**What is Ansible? What era its benefits?**
+**What is Ansible? What are its benefits?**
+
+config management
+agentless, only need one controller machine
 
 
 **Why should we use Ansible?**
